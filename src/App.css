@@ -1,0 +1,101 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tree {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subordinate {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.subordinate .sub-name {
+  margin-left: 10px;
+}
+
+.highlighted {
+  background-color: #f7f7f7;
+}
+
+.move-button {
+  margin-left: 10px;
+  padding: 2px 6px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.move-button:hover {
+  background-color: #2980b9;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.undo-button,
+.redo-button {
+  padding: 6px 12px;
+  background-color: #dcdcdc;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.undo-button:hover,
+.redo-button:hover {
+  background-color: #b0b0b0;
+}
+.employee {
+  margin-left: 20px;
+}
+
+.employee-name {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.employee-name .arrow {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.supervisor {
+  background-color: #dff0d8;
+}
+
+.subordinate {
+  background-color: #fcf8e3;
+  transition: background-color 0.3s ease;
+}
+
+.subordinate.move-animation {
+  background-color: #d4e6f1;
+}
